@@ -13,6 +13,8 @@ jobs:
 
       - name: Setup R
         uses: r-lib/actions/setup-r@master
+        with:
+          crayon.enabled: 'FALSE'
 
       - name: Install tinytex
         uses: r-lib/actions/setup-tinytex@master
@@ -33,8 +35,8 @@ jobs:
         uses: actions/cache@v1
         with:
           path: _bookdown_files
-          key: bookdown-${{ hashFiles('**/*Rmd') }}
-          restore-keys: bookdown-
+          key: bookdown-2-${{ hashFiles('**/*Rmd') }}
+          restore-keys: bookdown-2-
 
       - name: Install packages
         run: |

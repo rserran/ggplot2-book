@@ -32,5 +32,9 @@ rmd_files:
 - "internals.Rmd"
 - "extensions.Rmd"
 - "ext-spring1.Rmd"
+- "ext-spring2.Rmd"
+- "ext-spring3.Rmd"
+- "ext-spring4.Rmd"
+- "ext-spring5.Rmd"
 
 - "references.Rmd"
